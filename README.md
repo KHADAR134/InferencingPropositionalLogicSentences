@@ -1,40 +1,31 @@
 ## EX NO:07
-## DATE:23.6.22
-# <p align="center">Inferencing Propositional Logic Sentences
-
+## DATE:23-6-22
+# <p align="center">Inferencing Propositional Logic Sentences</p>
 ## AIM
-
 To develop python code to inference propositional logic sentences to solve Wumpus World problem.
-
 ## THEORY
 The Wumpus World's agent is an example of a knowledge-based agent that represents Knowledge representation, reasoning , and planning. A Knowledge-Based agent links general knowledge with current percepts to infer hidden characters of the current state before selecting actions.
-
 ## DESIGN STEPS
 ## STEP 1:
 Importing required logical and utils files.
-
 ## STEP 2:
 Defining a knowledge base class with functions on a python file.
-
 ## STEP 3:
 creating a new knowledge base for agent, with a function called propKB().
-
 ## STEP 4:
 Mentioning the labels in the wumpus game cell for location in the function of expressions.
-
 ## STEP 5:
 Using wumpus_kb.tell() to define the environment of the wumpus game.
-
 ## STEP 6:
 Using propositional Logic defines the possibility of agent's next move.
-
 ## STEP 7:
 Using wumpus_kb.ask_if_true() to get the result based on TRUE value.
-
 ## PROGRAM
 ```python
-  Developed by: SHAIK KHADAR BASHA
-  Register No:212220230045
+#DEVELOPED BY: SHAIK KHADAR BASHA
+#REGISTER NO: 212220230045
+```
+```python
 from utils import *
 from logic import *
 char=['P','B','W','S']
@@ -92,15 +83,13 @@ wumpus_kb.tell(B44)
 wumpus_kb.tell(B42)
 wumpus_kb.tell(S12 | '<=>' | ((W22 | W13)))
 wumpus_kb.tell(~B12 | '<=>' | ((~P22 | ~P13)))
-wumpus_kb.tell(B23 | '<=>' | ((P33 | P34)))
-
+wumpus_kb.tell(B23 | '<=>' | ((P33 | P34)))e
 wumpus_kb.tell(B31 | '<=>' | ((P41| P23)))
 wumpus_kb.tell(B32 | '<=>' | ((P33| P42)))
 wumpus_kb.tell(B34 | '<=>' | ((P33| P44)))
 wumpus_kb.clauses
 wumpus_kb.ask_if_true(~P41)
 ```
-
 ## OUTPUT:
 ## Checking in algorithm:
 ![21](https://user-images.githubusercontent.com/75235090/175758834-b2efad2d-195c-4ca9-93c7-23117c4baf08.png)
